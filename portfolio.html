@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100rem;
+        height: 80rem;
+
+    }
+    .navbar {
+        display: block;
+        color: rgb(245, 247, 248);
+        background-color: rgb(11, 11, 11);
+        border: 1px solid rgb(12, 4, 4);
+        margin: auto;
+        width: 100rem;
+        padding: 10px;
+
+    }
+    .navbar ul {
+        overflow: auto;
+    }
+    .navbar li {
+        list-style: none;
+        float: left;
+        padding: 10px;
+    }
+    .navbar li a {
+        text-align: justify;
+        color: rgb(232, 79, 8);
+    }
+    .navbar li a:hover {
+        color: rgb(235, 175, 126);
+        cursor: grab;
+    }
+    #head1 {
+        display: inline-block;
+        float: left;
+        clear: both;
+        font-size: 45px;
+        margin: auto;
+        color: antiquewhite;
+        clear: both;
+
+    }
+
+    #head2 {
+        display: inline-block;
+        text-align: justify;
+        position: relative;
+        float: left;
+        color: whitesmoke;
+        clear: both;
+        font-size: 35px;
+        margin-top: 10px;
+        padding: 4px;
+        line-height: 1.1em;
+        line-break: auto;
+    }
+
+    .container::before {
+
+        background-image: url(https://i.pinimg.com/originals/e5/c8/03/e5c803a1f390a8bfb5f45abd8a055ba5.jpg);
+        background-repeat: no-repeat cover;
+        background-position: center-center;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100rem;
+        height: 100rem;
+        z-index: -1;
+        opacity: 0.9;
+    }
+
+    .container img {
+        margin-left: 350px;
+        margin-top: -100px;
+        left: 205%;
+        width: 40%;
+        height: 60%;
+        display: inline;
+
+    }
+    .container h1 {
+        color: rgba(148, 229, 247, 0.958);
+        font-size: 85px;
+    }
+    input[type='submit'] {
+        color: white;
+        background-color: black;
+        border-radius: 15px;
+        display: inline;
+        font-size: x-large;
+        border: 3px solid black;
+        position: absolute;
+        margin-top: 600px;
+        margin-left: -250px;
+        cursor: grabbing;
+
+    }
+    input[type='submit']:hover{
+      color: black;
+      background-color: white;
+      border-radius: 15px;
+      border: 4px solid white;
+    }
+
+    input[type='button'] {
+        color:white;
+        background-color:black;
+        border-radius: 15px;
+        display: inline;
+        font-size: x-large;
+        border: 3px solid black;
+        position: absolute;
+        margin-top: 600px;
+        cursor: grabbing;
+    }
+    input[type='button']:hover{
+      color: black;
+      background-color: white;
+      border-radius: 15px;
+      border: 4px solid white;
+    }
+    
+    a{
+        color: aliceblue;
+        font-weight: bold;
+    }
+    
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a herf="#">Home</a></li>
+                <li><a herf="#">About</a></li>
+                <li><a herf="#">Experience</a></li>
+                <li><a herf="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Hey, Jaya here</h1> <hr>
+
+        <div class="section" id="head1">
+            <h3>I am a </h3>
+            <h3>Web Developer</h3>
+            <span id="element"></span>
+        </div>
+        <div class="section" id="head2">
+            <p>"I specialize in front-end development, <br>
+                   focusing on creating user-friendly and visually appealing websites."
+<br>
+"I've been working in this field from many years and <br>
+have had the opportunity to work on a variety of projects"<br>
+
+ "I'm skilled in HTML, CSS, JavaScript"
+<br>
+ "I'm really passionate about crafting seamless online experiences and <br>
+ keeping up with the latest industry trends."<br>
+
+"I'm always open to connecting with fellow developers and <br>discussing potential collaborations or sharing insights. Feel free to reach out!"
+</p>
+
+ </div> 
+
+        <div class="button" id="but1">
+            <input type="submit" value="👉Get in touch">
+
+        </div>
+
+        <div class="button" id="but2">
+            <input type="button" value="Download CV⏬">
+        </div>
+        
+    </div>
+    <hr>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>software</i> engineer', '&amp; a project manager'],
+            typeSpeed: 45,
+        });
+    </script>
+
+</body>
+
+</html>
